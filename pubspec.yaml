@@ -27,7 +27,8 @@ dependencies:
   theme_service:
     git: https://github.com/niypoo/theme_service.git
   user_firestore_helper:
-    path: ../../../core/helpers/user_firestore_helper
+    git: 
+      url: git@github.com:niypoo/user_firestore_helper.git
   image_select_helper:
     git: https://github.com/niypoo/image_select_helper.git
   firebase_cloud_storage_service:
