@@ -47,8 +47,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: de04af1cbb0f0e257263d8cad61d49fb5eb001fe
-      url: "git@github.com:niypoo/authentication_view_module.git"
+      resolved-ref: a55497138f5e8aba7506c0e915b93a76b1ffa0dd
+      url: "https://github.com/niypoo/authentication_view_module.git"
     source: git
     version: "1.0.0+1"
   auto_size_text:
@@ -1065,9 +1065,11 @@ packages:
   user_firestore_helper:
     dependency: "direct main"
     description:
-      path: "../../helpers/user_firestore_helper"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: c23d21058768974824c2e24a9510a2101b4d8e16
+      url: "git@github.com:niypoo/user_firestore_helper.git"
+    source: git
     version: "1.0.0+1"
   uuid:
     dependency: transitive
