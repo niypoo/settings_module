@@ -21,7 +21,7 @@ dependencies:
   firebase_authentication_service:
     git: https://github.com/niypoo/firebase_authentication_service.git
   authentication_view_module:
-    git: git@github.com:niypoo/authentication_view_module.git
+    git: https://github.com/niypoo/authentication_view_module.git
   localization_service:
     git: https://github.com/niypoo/localization_service.git
   theme_service:
