@@ -7,7 +7,7 @@ import 'package:fly_ui/views/drawer/widgets/drawerSectionTitle.widget.dart';
 import 'package:get/get.dart';
 import 'package:localization_service/views/localizationDrawerSettingCard.widget.dart';
 import 'package:settings_module/settings/settings.controller.dart';
-import 'package:theme_service/views/widgets/themeDrawerSettingCard.widget%20copy.dart';
+import 'package:theme_service/views/widgets/themeDrawerSettingCard.widget.dart';
 import 'package:unicons/unicons.dart';
 
 class SettingsDrawerOptions extends GetView<SettingsController> {
