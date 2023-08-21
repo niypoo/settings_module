@@ -5,10 +5,10 @@ packages:
     dependency: transitive
     description:
       name: _flutterfire_internals
-      sha256: "5dce45a06d386358334eb1689108db6455d90ceb0d75848d5f4819283d4ee2b8"
+      sha256: "1a5e13736d59235ce0139621b4bbe29bc89839e202409081bc667eb3cd20674c"
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.4"
+    version: "1.3.5"
   animations:
     dependency: transitive
     description:
@@ -22,7 +22,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "110b767323ce788da2fe728d051d9689050287a0"
+      resolved-ref: aef4dbcf3efc234d29b09c773fa122f7dde5416b
       url: "https://github.com/niypoo/app_configuration_service.git"
     source: git
     version: "1.0.0+1"
@@ -72,7 +72,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "566be11e86fc660ee314ab7321e7c44cd234f38a"
+      resolved-ref: "078d447fc3c751389c26b22ec7a3ee45049baa81"
       url: "https://github.com/niypoo/bottom_sheet_helper.git"
     source: git
     version: "1.0.0+1"
@@ -120,26 +120,26 @@ packages:
     dependency: transitive
     description:
       name: cloud_firestore
-      sha256: "035b91f66b60dab5eefcc217accc734020234f79d963b075699920b95334a755"
+      sha256: "6ffb0e84efbaab16245994bcf61ba10a98ee1e73bac075cae8036ba6427a7ac0"
       url: "https://pub.dev"
     source: hosted
-    version: "4.8.3"
+    version: "4.8.5"
   cloud_firestore_platform_interface:
     dependency: transitive
     description:
       name: cloud_firestore_platform_interface
-      sha256: "86bd1865abbeb09a7d09da3e70364a09f894937270651fc611a1c6d6a9f7b02c"
+      sha256: "1487af8fd74a9ca754995cae1cf6bb2440ac4a93a5f7c7bbe7cc434231cc03c9"
       url: "https://pub.dev"
     source: hosted
-    version: "5.15.3"
+    version: "5.15.4"
   cloud_firestore_web:
     dependency: transitive
     description:
       name: cloud_firestore_web
-      sha256: ac2eeb2a7ab1928c3aacc30eed750fa839d6f620e112a5459e321df217be2f47
+      sha256: c3d37dad0b5637ab337acc4ab204e6d739e3be0e7972cdc85bdc4aac5145c92d
       url: "https://pub.dev"
     source: hosted
-    version: "3.6.3"
+    version: "3.6.4"
   collection:
     dependency: transitive
     description:
@@ -169,7 +169,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "8b2f234fb6d4ed11993c89911326ee499906b14e"
+      resolved-ref: "4bf9c767f30a45880d39221878c89bf658ec1bc2"
       url: "https://github.com/niypoo/connectivity_service.git"
     source: git
     version: "1.0.0+1"
@@ -202,7 +202,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: ef5fb8fd4d1071bbd40fd17ae64f4cd63def580a
+      resolved-ref: "9922fd78919bfeef55f16ba10136dadfdf6dbda0"
       url: "https://github.com/niypoo/dialog_helper.git"
     source: git
     version: "1.0.0+1"
@@ -218,10 +218,10 @@ packages:
     dependency: transitive
     description:
       name: ffi
-      sha256: ed5337a5660c506388a9f012be0288fb38b49020ce2b45fe1f8b8323fe429f99
+      sha256: "7bf0adc28a23d395f19f3f1eb21dd7cfd1dd9f8e1c50051c069122e6853bc878"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.2"
+    version: "2.1.0"
   file:
     dependency: transitive
     description:
@@ -266,32 +266,32 @@ packages:
     dependency: transitive
     description:
       name: firebase_auth
-      sha256: acfbe55bc23e94ccc7228b7fc7b9abc0005597c1de226f6e3a0103ac29728fbe
+      sha256: ae8029eee0ed24a0ae4a9bcc94c5ef9c2e0c31066c5132c56575da929dd14a46
       url: "https://pub.dev"
     source: hosted
-    version: "4.7.1"
+    version: "4.7.3"
   firebase_auth_platform_interface:
     dependency: transitive
     description:
       name: firebase_auth_platform_interface
-      sha256: "4ab0a8997994db2b76bf0652689d7908ca935a99314857c683251bc23d31c287"
+      sha256: cb099fbd3d48f7983c8d7cea45947d98d36174fb7d611e4ff08f802491e8a945
       url: "https://pub.dev"
     source: hosted
-    version: "6.16.0"
+    version: "6.16.2"
   firebase_auth_web:
     dependency: transitive
     description:
       name: firebase_auth_web
-      sha256: "2e694a612a0739c0cf5f426d515dda37ee5827bab211d16e76bcad6a082925eb"
+      sha256: d35abf4c6c77c9e7be5d7a637e6e07765b70426015800ba031257f382bff5f83
       url: "https://pub.dev"
     source: hosted
-    version: "5.6.1"
+    version: "5.6.3"
   firebase_authentication_service:
     dependency: "direct main"
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "1e9371550db53b4fc583cc32e63e97f5cb784c39"
+      resolved-ref: ad1b1207e05b3a60a47ec65412cb51c56e041603
       url: "https://github.com/niypoo/firebase_authentication_service.git"
     source: git
     version: "1.0.0+1"
@@ -300,7 +300,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: c93b0ba13310a6721ad1560db2f84b1b24d97148
+      resolved-ref: "0121008c88fabfa868e0d269c3d29a8e556ae1c4"
       url: "https://github.com/niypoo/firebase_cloud_storage_service.git"
     source: git
     version: "1.0.0+1"
@@ -308,10 +308,10 @@ packages:
     dependency: transitive
     description:
       name: firebase_core
-      sha256: "2e9324f719e90200dc7d3c4f5d2abc26052f9f2b995d3b6626c47a0dfe1c8192"
+      sha256: c78132175edda4bc532a71e01a32964e4b4fcf53de7853a422d96dac3725f389
       url: "https://pub.dev"
     source: hosted
-    version: "2.15.0"
+    version: "2.15.1"
   firebase_core_platform_interface:
     dependency: transitive
     description:
@@ -324,40 +324,40 @@ packages:
     dependency: transitive
     description:
       name: firebase_core_web
-      sha256: "0fd5c4b228de29b55fac38aed0d9e42514b3d3bd47675de52bf7f8fccaf922fa"
+      sha256: "4cf4d2161530332ddc3c562f19823fb897ff37a9a774090d28df99f47370e973"
       url: "https://pub.dev"
     source: hosted
-    version: "2.6.0"
+    version: "2.7.0"
   firebase_storage:
     dependency: transitive
     description:
       name: firebase_storage
-      sha256: "4b747005aee0c611242cdd553f58795f51e1567d2dfd4f75692fac3f67c8c336"
+      sha256: "11423ac63c1ec566069c80b1d01bc3c9e12a8f106bbc4ba77fa150afb88488a3"
       url: "https://pub.dev"
     source: hosted
-    version: "11.2.5"
+    version: "11.2.6"
   firebase_storage_platform_interface:
     dependency: transitive
     description:
       name: firebase_storage_platform_interface
-      sha256: c77c7b6b7d283280993c81ea8ac95552b2ae521a7bb46a95181c1482e62d1633
+      sha256: "2a8ee7b8a06ee5201f9a116db6972ba0020e3a314a5065acdcb616f4d6c99771"
       url: "https://pub.dev"
     source: hosted
-    version: "4.4.4"
+    version: "4.4.5"
   firebase_storage_web:
     dependency: transitive
     description:
       name: firebase_storage_web
-      sha256: "6906245579f1af225e43df0395c9d9631cb3135cbfa3521a839196d3383bb89a"
+      sha256: bd110daa180dc9c89abb490c8a330571e103291b348358d320f5b20a61cd46fc
       url: "https://pub.dev"
     source: hosted
-    version: "3.6.5"
+    version: "3.6.6"
   firestore_service:
     dependency: transitive
     description:
       path: "."
       ref: HEAD
-      resolved-ref: c0a50b84a0fda424ec1da44fe93d3650ada77fdd
+      resolved-ref: "3dfea6a9d819a6e467e285f41f818446b3d70fb7"
       url: "https://github.com/niypoo/firestore_service.git"
     source: git
     version: "1.0.0+1"
@@ -453,7 +453,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "8d444ee98d1b314a7d706751cf852c3eb17c0f5f"
+      resolved-ref: "9e81f96c02261e72bd03e4ea49afa26859cca847"
       url: "https://github.com/niypoo/fly_ui.git"
     source: git
     version: "1.0.0+1"
@@ -526,7 +526,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "6396cd25e671f23e633d43798b9557fc7b6e73ed"
+      resolved-ref: "6e51c490b250bb7523cf74cecbb194dace1164fe"
       url: "https://github.com/niypoo/helpers.git"
     source: git
     version: "1.0.0+1"
@@ -550,10 +550,10 @@ packages:
     dependency: transitive
     description:
       name: image_picker
-      sha256: "6296e98782726d37f59663f0727d0e978eee1ced1ffed45ccaba591786a7f7b3"
+      sha256: "841837258e0b42c80946c43443054fc726f5e8aa84a97f363eb9ef0d45b33c14"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   image_picker_android:
     dependency: transitive
     description:
@@ -566,10 +566,10 @@ packages:
     dependency: transitive
     description:
       name: image_picker_for_web
-      sha256: "869fe8a64771b7afbc99fc433a5f7be2fea4d1cb3d7c11a48b6b579eb9c797f0"
+      sha256: "8b6c160cdbe572199103a091c783685b236110e4a0fd7a4947f32ff5b7da8765"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "3.0.0"
   image_picker_ios:
     dependency: transitive
     description:
@@ -598,10 +598,10 @@ packages:
     dependency: transitive
     description:
       name: image_picker_platform_interface
-      sha256: "7c7b96bb9413a9c28229e717e6fd1e3edd1cc5569c1778fcca060ecf729b65ee"
+      sha256: c1134543ae2187e85299996d21c526b2f403854994026d575ae4cf30d7bb2a32
       url: "https://pub.dev"
     source: hosted
-    version: "2.8.0"
+    version: "2.9.0"
   image_picker_windows:
     dependency: transitive
     description:
@@ -615,7 +615,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: b6687a59cb4d96dca479b5904a20d4a65f4e076f
+      resolved-ref: "4bc394ce7ee84d3e42d9320cdf4fa7afbd6fef2d"
       url: "https://github.com/niypoo/image_select_helper.git"
     source: git
     version: "1.0.0+1"
@@ -632,7 +632,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "8504b1729a2fa8106733d2709b8e71da14be9dee"
+      resolved-ref: fded03b4c78a6e92aa9da690a94b22201c758fc8
       url: "https://github.com/niypoo/launch_url_helper.git"
     source: git
     version: "1.0.0+1"
@@ -649,7 +649,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "0d254f0768a80898b63d2f594812ad85781ba47d"
+      resolved-ref: bfc8086cde5bb2e60eaf261497060dada8396f69
       url: "https://github.com/niypoo/loading_service.git"
     source: git
     version: "1.0.0+1"
@@ -658,7 +658,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: c3c1d8ad5d5d58304d749b7f3b9a9a3a0d1c6cbb
+      resolved-ref: "129bc43cc1c9c9ee643397405c2b1dfe5d227743"
       url: "https://github.com/niypoo/local_storage_service.git"
     source: git
     version: "1.0.0+1"
@@ -667,7 +667,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "5dfc1ffc8bdaaad3a33d1881924787a01350f404"
+      resolved-ref: d2490e9c7443632fbea4359205a0c46e8999d3de
       url: "https://github.com/niypoo/localization_service.git"
     source: git
     version: "1.0.0+1"
@@ -835,18 +835,18 @@ packages:
     dependency: transitive
     description:
       name: platform
-      sha256: "4a451831508d7d6ca779f7ac6e212b4023dd5a7d08a27a63da33756410e32b76"
+      sha256: "57c07bf82207aee366dfaa3867b3164e4f03a238a461a11b0e8a3a510d51203d"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "3.1.1"
   plugin_platform_interface:
     dependency: transitive
     description:
       name: plugin_platform_interface
-      sha256: "6a2128648c854906c53fa8e33986fc0247a1116122f9534dd20e3ab9e16a32bc"
+      sha256: "43798d895c929056255600343db8f049921cbec94d31ec87f1dc5c16c01935dd"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.4"
+    version: "2.1.5"
   quiver:
     dependency: transitive
     description:
@@ -897,7 +897,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "6be6f9da529368aa713d1c6cf550e73ef1f87329"
+      resolved-ref: "17c16de4060a5a5bf873097e99444e386c61142c"
       url: "https://github.com/niypoo/snackbar_helper.git"
     source: git
     version: "1.0.0+1"
@@ -913,18 +913,18 @@ packages:
     dependency: transitive
     description:
       name: sqflite
-      sha256: b4d6710e1200e96845747e37338ea8a819a12b51689a3bcf31eff0003b37a0b9
+      sha256: "591f1602816e9c31377d5f008c2d9ef7b8aca8941c3f89cc5fd9d84da0c38a9a"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.8+4"
+    version: "2.3.0"
   sqflite_common:
     dependency: transitive
     description:
       name: sqflite_common
-      sha256: "8f7603f3f8f126740bc55c4ca2d1027aab4b74a1267a3e31ce51fe40e3b65b8f"
+      sha256: "1b92f368f44b0dee2425bb861cfa17b6f6cf3961f762ff6f941d20b33355660a"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.5+1"
+    version: "2.5.0"
   stack_trace:
     dependency: transitive
     description:
@@ -978,7 +978,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "08dab82a42fe2cd8ee12f4831ac5d97674f5fabb"
+      resolved-ref: b1517adf1db03ad276f11b415d7e44c10be507be
       url: "https://github.com/niypoo/theme_service.git"
     source: git
     version: "1.0.0+1"
@@ -1010,10 +1010,10 @@ packages:
     dependency: transitive
     description:
       name: url_launcher_android
-      sha256: "15f5acbf0dce90146a0f5a2c4a002b1814a6303c4c5c075aa2623b2d16156f03"
+      sha256: "3dd2388cc0c42912eee04434531a26a82512b9cb1827e0214430c9bcbddfe025"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.36"
+    version: "6.0.38"
   url_launcher_ios:
     dependency: transitive
     description:
@@ -1115,18 +1115,18 @@ packages:
     dependency: transitive
     description:
       name: win32
-      sha256: dfdf0136e0aa7a1b474ea133e67cb0154a0acd2599c4f3ada3b49d38d38793ee
+      sha256: f2add6fa510d3ae152903412227bda57d0d5a8da61d2c39c1fb022c9429a41c0
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.5"
+    version: "5.0.6"
   xdg_directories:
     dependency: transitive
     description:
       name: xdg_directories
-      sha256: e0b1147eec179d3911f1f19b59206448f78195ca1d20514134e10641b7d7fbff
+      sha256: f0c26453a2d47aa4c2570c6a033246a3fc62da2fe23c7ffdd0a7495086dc0247
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   xml:
     dependency: transitive
     description:
