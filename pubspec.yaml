@@ -15,7 +15,8 @@ dependencies:
   app_configuration_service:
     git: https://github.com/niypoo/app_configuration_service.git
   bottom_sheet_helper:
-    git: https://github.com/niypoo/bottom_sheet_helper.git
+    git: 
+      url: git@github.com:niypoo/bottom_sheet_helper.git
   launch_url_helper:
     git: https://github.com/niypoo/launch_url_helper.git
   firebase_authentication_service:
@@ -30,7 +31,8 @@ dependencies:
     git: 
       url: git@github.com:niypoo/user_firestore_helper.git
   image_select_helper:
-    git: https://github.com/niypoo/image_select_helper.git
+    git: 
+      url: git@github.com:niypoo/image_select_helper.git
   firebase_cloud_storage_service:
     git: https://github.com/niypoo/firebase_cloud_storage_service.git
   helpers:
