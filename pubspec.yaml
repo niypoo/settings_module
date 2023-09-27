@@ -20,15 +20,20 @@ dependencies:
     git: 
       url: git@github.com:niypoo/bottom_sheet_helper.git
   launch_url_helper:
-    git: https://github.com/niypoo/launch_url_helper.git
+    git: 
+      url: git@github.com:niypoo/launch_url_helper.git
   firebase_authentication_service:
-    git: https://github.com/niypoo/firebase_authentication_service.git
+    git: 
+      url: git@github.com:niypoo/firebase_authentication_service.git
   authentication_view_module:
-    git: https://github.com/niypoo/authentication_view_module.git
+    git: 
+      url: git@github.com:niypoo/authentication_view_module.git
   localization_service:
-    git: https://github.com/niypoo/localization_service.git
+    git: 
+      url: git@github.com:niypoo/localization_service.git
   theme_service:
-    git: https://github.com/niypoo/theme_service.git
+    git: 
+      url: git@github.com:niypoo/theme_service.git
   user_firestore_helper:
     git: 
       url: git@github.com:niypoo/user_firestore_helper.git
@@ -36,13 +41,17 @@ dependencies:
     git: 
       url: git@github.com:niypoo/image_select_helper.git
   firebase_cloud_storage_service:
-    git: https://github.com/niypoo/firebase_cloud_storage_service.git
+    git: 
+      url: git@github.com:niypoo/firebase_cloud_storage_service.git
   helpers:
-     git: https://github.com/niypoo/helpers.git
+     git: 
+      url: git@github.com:niypoo/helpers.git
   loading_service:
-     git: https://github.com/niypoo/loading_service.git
+     git: 
+      url: git@github.com:niypoo/loading_service.git
   snackbar_helper:
-     git: https://github.com/niypoo/snackbar_helper.git
+     git: 
+      url: git@github.com:niypoo/snackbar_helper.git
 
 dev_dependencies:
   flutter_test:
