@@ -11,7 +11,8 @@ dependencies:
     sdk: flutter
 
   fly_ui:
-    git: https://github.com/niypoo/fly_ui.git
+    git:
+      url: git@github.com:niypoo/fly_ui.git
   app_configuration_service:
     git: 
       url: git@github.com:niypoo/app_configuration_service.git
