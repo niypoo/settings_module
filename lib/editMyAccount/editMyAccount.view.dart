@@ -61,12 +61,47 @@ class EditMyAccountView extends GetView<EditMyAccountController> {
         // /DisplayName
         Form(
           key: controller.form,
-          child: FlyTextField(
-            labelText: "Your name".tr,
-            textInputType: TextInputType.text,
-            color: Get.theme.scaffoldBackgroundColor,
-            controller: controller.displayNameController,
-            validator: (String? v) => controller.displayNameValidation(v),
+          child: Column(
+            children: [
+              FlyTextField(
+                labelText: "Your name".tr,
+                textInputType: TextInputType.text,
+                color: Get.theme.scaffoldBackgroundColor,
+                controller: controller.displayNameController,
+                validator: (String? v) => controller.displayNameValidation(v),
+              ),
+              FlyTextField(
+                labelText: "Brief (optional)".tr,
+                maxLines: 4,
+                textInputType: TextInputType.text,
+                color: Get.theme.scaffoldBackgroundColor,
+                controller: controller.briefController,
+              ),
+              FlyTextField(
+                labelText: "Facebook Username (optional)".tr,
+                textInputType: TextInputType.text,
+                color: Get.theme.scaffoldBackgroundColor,
+                controller: controller.facebookController,
+              ),
+              FlyTextField(
+                labelText: "Twitter Username (optional)".tr,
+                textInputType: TextInputType.text,
+                color: Get.theme.scaffoldBackgroundColor,
+                controller: controller.twitterController,
+              ),
+              FlyTextField(
+                labelText: "Instagram Username (optional)".tr,
+                textInputType: TextInputType.text,
+                color: Get.theme.scaffoldBackgroundColor,
+                controller: controller.instagramController,
+              ),
+              FlyTextField(
+                labelText: "TikTok Username (optional)".tr,
+                textInputType: TextInputType.text,
+                color: Get.theme.scaffoldBackgroundColor,
+                controller: controller.tiktokController,
+              ),
+            ],
           ),
         ),
 

@@ -22,12 +22,16 @@ class EditMyAccountController extends GetxController {
   final BaseUser? user = FirebaseAuthenticationService.to.user.value;
   final GlobalKey<FormState> form = GlobalKey<FormState>();
   final TextEditingController displayNameController = TextEditingController();
+  final TextEditingController briefController = TextEditingController();
+  final TextEditingController facebookController = TextEditingController();
+  final TextEditingController twitterController = TextEditingController();
+  final TextEditingController instagramController = TextEditingController();
+  final TextEditingController tiktokController = TextEditingController();
 
   @override
   void onInit() {
     // init dispalyname
     displayNameController.text = user!.displayName!;
-
     super.onInit();
   }
 
@@ -51,8 +55,14 @@ class EditMyAccountController extends GetxController {
 
     // if user has changed display name
     if (user!.displayName != displayNameController.text) {
-      UserFirestoreHelper.update(
-          user!.id, {'displayName': displayNameController.text});
+      UserFirestoreHelper.update(user!.id, {
+        'displayName': displayNameController.text,
+        'brief': briefController.text,
+        'facebook': facebookController.text,
+        'twitter': twitterController.text,
+        'instagram': instagramController.text,
+        'tiktok': tiktokController.text,
+      });
 
       //show snack
       SnackbarHelper.show(body: "Your name has updated.".tr);
