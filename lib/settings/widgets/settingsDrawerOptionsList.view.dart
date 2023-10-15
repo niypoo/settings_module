@@ -20,6 +20,7 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
     this.enableSignOut = true,
     this.enableLocalization = true,
     this.enableTheme = true,
+    this.children = const [],
   }) : super(key: key);
 
   final bool enableLocalization;
@@ -29,6 +30,7 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
   final bool enablePermanentAccount;
   final bool enableDeleteMyAccount;
   final bool enableSignOut;
+  final List<Widget> children;
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +41,9 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
         if (enableLocalization) const LocalizationDrawerSettingCard(),
 
         if (enableTheme) const ThemeDrawerSettingCard(),
+
+        // children
+        ...children,
 
         if (enableEditMyAccount)
           FlyDrawerButton(
