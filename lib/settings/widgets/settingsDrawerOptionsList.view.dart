@@ -11,36 +11,59 @@ import 'package:theme_service/views/widgets/themeDrawerSettingCard.widget.dart';
 import 'package:unicons/unicons.dart';
 
 class SettingsDrawerOptions extends GetView<SettingsController> {
-  const SettingsDrawerOptions({Key? key}) : super(key: key);
+  const SettingsDrawerOptions({
+    Key? key,
+    this.enableEditMyAccount = true,
+    this.enableContactUs = true,
+    this.enablePermanentAccount = true,
+    this.enableDeleteMyAccount = true,
+    this.enableSignOut = true,
+    this.enableLocalization = true,
+    this.enableTheme = true,
+  }) : super(key: key);
+
+  final bool enableLocalization;
+  final bool enableTheme;
+  final bool enableEditMyAccount;
+  final bool enableContactUs;
+  final bool enablePermanentAccount;
+  final bool enableDeleteMyAccount;
+  final bool enableSignOut;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         FlyDrawerSectionTitle(title: 'Settings'.tr),
-        const LocalizationDrawerSettingCard(),
-        const ThemeDrawerSettingCard(),
-        FlyDrawerButton(
-          icon: UniconsLine.user,
-          onTap: controller.toEditMyAccount,
-          title: 'My Account Info'.tr,
-        ),
-        FlyDrawerButton(
-          icon: UniconsLine.mailbox,
-          onTap: controller.onContactUsMenuShow,
-          title: 'Contact us'.tr,
-        ),
+
+        if (enableLocalization) const LocalizationDrawerSettingCard(),
+
+        if (enableTheme) const ThemeDrawerSettingCard(),
+
+        if (enableEditMyAccount)
+          FlyDrawerButton(
+            icon: UniconsLine.user,
+            onTap: controller.toEditMyAccount,
+            title: 'My Account Info'.tr,
+          ),
+
+        if (enableContactUs)
+          FlyDrawerButton(
+            icon: UniconsLine.mailbox,
+            onTap: controller.onContactUsMenuShow,
+            title: 'Contact us'.tr,
+          ),
 
         /////////////////
         ///isAnonymous//
         ///////////////
-        const ChangeToPermanentDrawerSettingCard(),
+        if (enablePermanentAccount) const ChangeToPermanentDrawerSettingCard(),
 
         //DELETE
-        const DeleteMyAccountDrawerSettingCard(),
+        if (enableDeleteMyAccount) const DeleteMyAccountDrawerSettingCard(),
 
         // Sign Out
-        const SignOutDrawerSettingCard(),
+        if (enableSignOut) const SignOutDrawerSettingCard(),
       ],
     );
   }
