@@ -23,36 +23,27 @@ class SettingsController extends GetxController {
       options: [
         ActionSheetOption(
           title: 'Problem Found'.tr,
-          value: 'bug',
+          value: 'ISSUE',
           leading: const Icon(UniconsLine.bug),
         ),
         ActionSheetOption(
           title: 'Feature Missing'.tr,
-          value: 'feature',
+          value: 'FEATURE',
           leading: const Icon(UniconsLine.star_half_alt),
         ),
       ],
       height: null,
-    ) as String?;
+    );
 
+    print('payload $payload');
+    
     // skip
     if (payload == null) return;
 
-    // in delete case
-    if (payload == 'bug') {
-      LaunchUrlHelper.toEmail(
-        email: AppConfigService.to.supportEmail,
-        subject: "Problem Found".tr,
-      );
-    }
-
-    // in edit weight case
-    if (payload == 'feature') {
-      LaunchUrlHelper.toEmail(
-        email: AppConfigService.to.supportEmail,
-        subject: "Feature Missing".tr,
-      );
-    }
+    LaunchUrlHelper.toEmail(
+      email: AppConfigService.to.supportEmail,
+      subject: "${AppConfigService.to.appName}-$payload".tr,
+    );
   }
 
   // show alert guest
