@@ -40,7 +40,6 @@ class EditMyAccountView extends GetView<EditMyAccountController> {
                 children: [
                   FlyIconButton(
                     icon: UniconsLine.pen,
-                    margin: EdgeInsets.all(AppConfigService.to.space!.s),
                     onPressed: EditMyAccountController.to.pickAnImage,
                   ),
                 ],
