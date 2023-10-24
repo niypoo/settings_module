@@ -31,20 +31,16 @@ class EditMyAccountView extends GetView<EditMyAccountController> {
 
             //return
             return FlyImage(
-              url: avatar?.photoUrl,
-              height: context.isLandscape
-                  ? context.height * 0.4
-                  : context.width * 0.4,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
+                url: avatar?.photoUrl,
+                height: context.isLandscape
+                    ? context.height * 0.4
+                    : context.width * 0.4,
+                actions: [
                   FlyIconButton(
                     icon: UniconsLine.pen,
                     onPressed: EditMyAccountController.to.pickAnImage,
                   ),
-                ],
-              ),
-            );
+                ]);
           },
         ),
 
