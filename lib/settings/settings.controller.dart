@@ -3,6 +3,7 @@ import 'package:bottom_sheet_helper/models/actionSheetOption.model.dart';
 import 'package:bottom_sheet_helper/services/actionSheet.helper.dart';
 import 'package:bottom_sheet_helper/services/customBottomSheet.helper.dart';
 import 'package:flutter/material.dart';
+import 'package:fly_ui/extensions/responsive.extension.dart';
 import 'package:get/get.dart';
 import 'package:launch_url_helper/launchURL.service.dart';
 import 'package:unicons/unicons.dart';
@@ -59,6 +60,7 @@ class SettingsController extends GetxController {
 
   void toEditMyAccount() => CustomBottomSheetHelper.show(
         title: 'Update your account'.tr,
+        height: 90.h,
         subTitle:
             'Write your real name and upload your photo to make others address you correctly.'
                 .tr,
