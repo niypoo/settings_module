@@ -60,10 +60,11 @@ class SettingsController extends GetxController {
 
   void toEditMyAccount() => CustomBottomSheetHelper.show(
         title: 'Update your account'.tr,
-        height: 90.h,
+        height: 80.h,
         subTitle:
             'Write your real name and upload your photo to make others address you correctly.'
                 .tr,
         child: EditMyAccountView(),
+        
       );
 }

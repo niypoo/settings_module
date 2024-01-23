@@ -3,6 +3,7 @@ import 'package:firebase_authentication_service/firebaseAuthentication.service.d
 import 'package:firebase_authentication_service/models/baseUser.model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fly_ui/extensions/responsive.extension.dart';
 import 'package:fly_ui/views/widgets/buttons/elevatedButton.widget.dart';
 import 'package:fly_ui/views/widgets/buttons/iconButton.widget.dart';
 import 'package:fly_ui/views/widgets/images/image.widget.dart';
@@ -20,94 +21,98 @@ class EditMyAccountView extends GetView<EditMyAccountController> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        // Avatar
-        Obx(
-          () {
-            // listen to user phot
-            final BaseUser? avatar =
-                FirebaseAuthenticationService.to.user.value;
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          // Avatar
+          Obx(
+            () {
+              // listen to user phot
+              final BaseUser? avatar =
+                  FirebaseAuthenticationService.to.user.value;
 
-            //return
-            return FlyImage(
+              //return
+              return FlyImage(
                 url: avatar?.photoUrl,
-                height: context.isLandscape
-                    ? context.height * 0.4
-                    : context.width * 0.4,
+                height: 100.sp,
+                width: double.maxFinite,
                 actions: [
                   FlyIconButton(
                     icon: UniconsLine.pen,
                     onPressed: EditMyAccountController.to.pickAnImage,
                   ),
-                ]);
-          },
-        ),
-
-        // Obx(
-        //   () => JSelectorOptionsArea(
-        //     selectedOption: controller.typesOptionSelected.value,
-        //     options: controller.typesOptions,
-        //     onTap: controller.changeProviderType,
-        //   ),
-        // ),
-        // Padding for top
-        SizedBox(height: AppConfigService.to.space!.m),
-        // /DisplayName
-        Form(
-          key: controller.form,
-          child: Column(
-            children: [
-              FlyTextField(
-                labelText: "Your name".tr,
-                textInputType: TextInputType.text,
-                color: Get.theme.scaffoldBackgroundColor,
-                controller: controller.displayNameController,
-                validator: (String? v) => controller.displayNameValidation(v),
-              ),
-              FlyTextField(
-                labelText: "Brief (optional)".tr,
-                maxLines: 4,
-                textInputType: TextInputType.text,
-                color: Get.theme.scaffoldBackgroundColor,
-                controller: controller.briefController,
-              ),
-              FlyTextField(
-                labelText: "Facebook Username (optional)".tr,
-                textInputType: TextInputType.text,
-                color: Get.theme.scaffoldBackgroundColor,
-                controller: controller.facebookController,
-              ),
-              FlyTextField(
-                labelText: "Twitter Username (optional)".tr,
-                textInputType: TextInputType.text,
-                color: Get.theme.scaffoldBackgroundColor,
-                controller: controller.twitterController,
-              ),
-              FlyTextField(
-                labelText: "Instagram Username (optional)".tr,
-                textInputType: TextInputType.text,
-                color: Get.theme.scaffoldBackgroundColor,
-                controller: controller.instagramController,
-              ),
-              FlyTextField(
-                labelText: "TikTok Username (optional)".tr,
-                textInputType: TextInputType.text,
-                color: Get.theme.scaffoldBackgroundColor,
-                controller: controller.tiktokController,
-              ),
-            ],
+                ],
+              );
+            },
           ),
-        ),
 
-        // Padding for top
-        SizedBox(height: AppConfigService.to.space!.m),
+          // Obx(
+          //   () => JSelectorOptionsArea(
+          //     selectedOption: controller.typesOptionSelected.value,
+          //     options: controller.typesOptions,
+          //     onTap: controller.changeProviderType,
+          //   ),
+          // ),
 
-        FlyElevatedButton.primary(
-          title: 'Save'.tr,
-          onPressed: controller.save,
-        )
-      ],
+          // Padding for top
+          SizedBox(height: 10.sp),
+
+          // /DisplayName
+          Form(
+            key: controller.form,
+            child: Column(
+              children: [
+                FlyTextField(
+                  labelText: "Your name".tr,
+                  textInputType: TextInputType.text,
+                  color: Get.theme.scaffoldBackgroundColor,
+                  controller: controller.displayNameController,
+                  validator: (String? v) => controller.displayNameValidation(v),
+                ),
+                FlyTextField(
+                  labelText: "Brief (optional)".tr,
+                  maxLines: 4,
+                  textInputType: TextInputType.text,
+                  color: Get.theme.scaffoldBackgroundColor,
+                  controller: controller.briefController,
+                ),
+                FlyTextField(
+                  labelText: "Facebook Username (optional)".tr,
+                  textInputType: TextInputType.text,
+                  color: Get.theme.scaffoldBackgroundColor,
+                  controller: controller.facebookController,
+                ),
+                FlyTextField(
+                  labelText: "Twitter Username (optional)".tr,
+                  textInputType: TextInputType.text,
+                  color: Get.theme.scaffoldBackgroundColor,
+                  controller: controller.twitterController,
+                ),
+                FlyTextField(
+                  labelText: "Instagram Username (optional)".tr,
+                  textInputType: TextInputType.text,
+                  color: Get.theme.scaffoldBackgroundColor,
+                  controller: controller.instagramController,
+                ),
+                FlyTextField(
+                  labelText: "TikTok Username (optional)".tr,
+                  textInputType: TextInputType.text,
+                  color: Get.theme.scaffoldBackgroundColor,
+                  controller: controller.tiktokController,
+                ),
+              ],
+            ),
+          ),
+
+          // Padding for top
+          SizedBox(height: AppConfigService.to.space!.m),
+
+          FlyElevatedButton.primary(
+            title: 'Save'.tr,
+            onPressed: controller.save,
+          )
+        ],
+      ),
     );
   }
 }
