@@ -50,19 +50,22 @@ class EditMyAccountController extends GetxController {
     // validation
     if (!form.currentState!.validate()) return;
 
-    // back
-    Get.back();
-
     // if user has changed display name
     if (user!.displayName != displayNameController.text) {
-      UserFirestoreHelper.update(user!.id, {
-        'displayName': displayNameController.text,
-        'brief': briefController.text,
-        'facebook': facebookController.text,
-        'twitter': twitterController.text,
-        'instagram': instagramController.text,
-        'tiktok': tiktokController.text,
-      });
+      UserFirestoreHelper.update(
+        user!.id,
+        {
+          'displayName': displayNameController.text,
+          'brief': briefController.text,
+          'facebook': facebookController.text,
+          'twitter': twitterController.text,
+          'instagram': instagramController.text,
+          'tiktok': tiktokController.text,
+        },
+      );
+
+      // back
+      Get.back();
 
       //show snack
       SnackbarHelper.show(body: "Your name has updated.".tr);
