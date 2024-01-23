@@ -34,7 +34,7 @@ class EditMyAccountView extends GetView<EditMyAccountController> {
               //return
               return FlyImage(
                 url: avatar?.photoUrl,
-                height: 100.sp,
+                height: 140.sp,
                 width: double.maxFinite,
                 actions: [
                   FlyIconButton(
