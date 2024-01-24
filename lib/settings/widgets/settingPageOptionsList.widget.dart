@@ -16,6 +16,7 @@ class SettingPageOptionsList extends GetView<SettingsController> {
   }) : super(key: key);
 
   final List<Widget>? customSettings;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -29,13 +30,6 @@ class SettingPageOptionsList extends GetView<SettingsController> {
 
         // custom settings
         if (customSettings != null) ...customSettings!,
-
-        FlyHeadline(title: 'My Account'.tr),
-
-        FlySettingIconCard(
-          onTap: controller.toEditMyAccount,
-          title: 'My Account Info'.tr,
-        ),
 
         FlyHeadline(title: 'Need Help'.tr),
 

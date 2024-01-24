@@ -13,7 +13,6 @@ import 'package:unicons/unicons.dart';
 class SettingsDrawerOptions extends GetView<SettingsController> {
   const SettingsDrawerOptions({
     Key? key,
-    this.enableEditMyAccount = true,
     this.enableContactUs = true,
     this.enablePermanentAccount = true,
     this.enableDeleteMyAccount = true,
@@ -25,7 +24,6 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
 
   final bool enableLocalization;
   final bool enableTheme;
-  final bool enableEditMyAccount;
   final bool enableContactUs;
   final bool enablePermanentAccount;
   final bool enableDeleteMyAccount;
@@ -44,13 +42,6 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
 
         // children
         ...children,
-
-        if (enableEditMyAccount)
-          FlyDrawerButton(
-            icon: UniconsLine.user,
-            onTap: controller.toEditMyAccount,
-            title: 'My Account Info'.tr,
-          ),
 
         if (enableContactUs)
           FlyDrawerButton(
