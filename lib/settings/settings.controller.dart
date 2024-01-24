@@ -33,7 +33,9 @@ class SettingsController extends GetxController {
         ],
         height: null,
       );
-
+print('payload $payload');
+print('email ${AppConfigService.to.supportEmail}');
+print('subject ${AppConfigService.to.appName}-$payload');
       // skip
       if (payload == null) return;
 
@@ -41,6 +43,7 @@ class SettingsController extends GetxController {
         email: AppConfigService.to.supportEmail,
         subject: "${AppConfigService.to.appName}-$payload".tr,
       );
+
     } catch (e) {
       print('ERROR $e');
     }
