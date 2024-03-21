@@ -51,6 +51,9 @@ class SettingPageOptionsList extends GetView<SettingsController> {
 
         // Sign Out
         const SignOutSettingCard(),
+
+
+        
       ],
     );
   }
