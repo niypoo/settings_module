@@ -1,3 +1,4 @@
+import 'package:app_configuration_service/appInfo.config.dart';
 import 'package:authentication_view_module/views/widgets/changeToPermanentSettingCard.widget.dart';
 import 'package:authentication_view_module/views/widgets/deleteMyAccountSettingCard.widget.dart';
 import 'package:authentication_view_module/views/widgets/signoutSettingCard.widget.dart';
@@ -5,6 +6,7 @@ import 'package:flutter/widgets.dart';
 import 'package:fly_ui/views/drawer/widgets/drawerButton.widget.dart';
 import 'package:fly_ui/views/drawer/widgets/drawerSectionTitle.widget.dart';
 import 'package:get/get.dart';
+import 'package:launch_url_helper/launchURL.service.dart';
 import 'package:localization_service/views/localizationDrawerSettingCard.widget.dart';
 import 'package:settings_module/settings/settings.controller.dart';
 import 'package:theme_service/views/widgets/themeDrawerSettingCard.widget.dart';
@@ -49,6 +51,18 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
             onTap: controller.onContactUsMenuShow,
             title: 'Contact us'.tr,
           ),
+
+        FlyDrawerButton(
+          icon: UniconsLine.lock,
+          onTap: LaunchUrlHelper.toUrl(AppConfigService.to.privacyUrl),
+          title: 'Privacy Policy'.tr,
+        ),
+        
+        FlyDrawerButton(
+          icon: UniconsLine.file_contract,
+          onTap: LaunchUrlHelper.toUrl(AppConfigService.to.termsUrl),
+          title: 'Terms'.tr,
+        ),
 
         /////////////////
         ///isAnonymous//
