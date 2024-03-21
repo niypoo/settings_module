@@ -54,13 +54,13 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
 
         FlyDrawerButton(
           icon: UniconsLine.lock,
-          onTap: LaunchUrlHelper.toUrl(AppConfigService.to.privacyUrl),
+          onTap: () => LaunchUrlHelper.toUrl(AppConfigService.to.privacyUrl),
           title: 'Privacy Policy'.tr,
         ),
-        
+
         FlyDrawerButton(
           icon: UniconsLine.file_contract,
-          onTap: LaunchUrlHelper.toUrl(AppConfigService.to.termsUrl),
+          onTap: () => LaunchUrlHelper.toUrl(AppConfigService.to.termsUrl),
           title: 'Terms'.tr,
         ),
 
