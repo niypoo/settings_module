@@ -45,6 +45,15 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
         // children
         ...children,
 
+        // Tutorial
+        if (AppConfigService.to.tutorialLink != null)
+          FlyDrawerButton(
+            icon: UniconsLine.lock,
+            onTap: () =>
+                LaunchUrlHelper.toUrl(AppConfigService.to.tutorialLink!),
+            title: 'Tutorial'.tr,
+          ),
+
         if (enableContactUs)
           FlyDrawerButton(
             icon: UniconsLine.mailbox,
