@@ -51,7 +51,7 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
             icon: UniconsLine.question_circle,
             onTap: () =>
                 LaunchUrlHelper.toUrl(AppConfigService.to.tutorialLink!),
-            title: 'Tutorial'.tr,
+            title: 'Help Center'.tr,
           ),
 
         if (enableContactUs)
