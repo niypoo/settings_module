@@ -30,7 +30,7 @@ class SettingRateApp extends StatelessWidget {
             Text(
               "We are working hard for a better user experience. We'd greatly appreciate if you can rate us."
                   .tr,
-              style: Get.textTheme.subtitle2,
+              style: Get.textTheme.titleSmall,
               textAlign: TextAlign.center,
             ),
             Padding(
@@ -68,7 +68,7 @@ class SettingRateApp extends StatelessWidget {
             ),
             Text(
               "The best we can get.".tr,
-              style: Get.textTheme.caption,
+              style: Get.textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
           ],
