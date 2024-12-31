@@ -42,15 +42,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
-  authentication_view_module:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "2e633518d2a14c96c6dddb572ab08908d4c0b46e"
-      url: "git@github.com:niypoo/authentication_view_module.git"
-    source: git
-    version: "1.0.0+1"
   auto_size_text:
     dependency: transitive
     description:
@@ -156,31 +147,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
-  connectivity_plus:
-    dependency: transitive
-    description:
-      name: connectivity_plus
-      sha256: "224a77051d52a11fbad53dd57827594d3bd24f945af28bd70bab376d68d437f0"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.0.2"
-  connectivity_plus_platform_interface:
-    dependency: transitive
-    description:
-      name: connectivity_plus_platform_interface
-      sha256: cf1d1c28f4416f8c654d7dc3cd638ec586076255d407cef3ddbdaf178272a71a
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.2.4"
-  connectivity_service:
-    dependency: transitive
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "6e652986de068aeb13b6e9f127aa9d1eb96e5f7a"
-      url: "git@github.com:niypoo/connectivity_service.git"
-    source: git
-    version: "1.0.0+1"
   cross_file:
     dependency: transitive
     description:
@@ -197,23 +163,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
-  dbus:
-    dependency: transitive
-    description:
-      name: dbus
-      sha256: "365c771ac3b0e58845f39ec6deebc76e3276aa9922b0cc60840712094d9047ac"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.7.10"
-  dialog_helper:
-    dependency: transitive
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "8d18760c1e8c35aaf0ce9f7b19c85712ee04a16a"
-      url: "git@github.com:niypoo/dialog_helper.git"
-    source: git
-    version: "1.0.0+1"
   fake_async:
     dependency: transitive
     description:
@@ -270,39 +219,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.9.3+1"
-  firebase_auth:
-    dependency: transitive
-    description:
-      name: firebase_auth
-      sha256: "3fd6475e60d518c021e70e7d4262db7dac327adf496e71048545da2e0b9ca510"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.17.9"
-  firebase_auth_platform_interface:
-    dependency: transitive
-    description:
-      name: firebase_auth_platform_interface
-      sha256: d44458576804f246a126fe797547330d2f7bd62069ce12479b583082340a2e4d
-      url: "https://pub.dev"
-    source: hosted
-    version: "7.1.9"
-  firebase_auth_web:
-    dependency: transitive
-    description:
-      name: firebase_auth_web
-      sha256: "57262c987e4f4e30c3e9a31f41171348c7dfbcdb8c84faa4cf841cea33e0e499"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.10.0"
-  firebase_authentication_service:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "7c23f0342abe80aac701c828809b908104d7e228"
-      url: "git@github.com:niypoo/firebase_authentication_service.git"
-    source: git
-    version: "1.0.0+1"
   firebase_cloud_storage_service:
     dependency: "direct main"
     description:
@@ -489,54 +405,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
-  google_identity_services_web:
-    dependency: transitive
-    description:
-      name: google_identity_services_web
-      sha256: "9482364c9f8b7bd36902572ebc3a7c2b5c8ee57a9c93e6eb5099c1a9ec5265d8"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.3.1+1"
-  google_sign_in:
-    dependency: transitive
-    description:
-      name: google_sign_in
-      sha256: "0b8787cb9c1a68ad398e8010e8c8766bfa33556d2ab97c439fb4137756d7308f"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.2.1"
-  google_sign_in_android:
-    dependency: transitive
-    description:
-      name: google_sign_in_android
-      sha256: "38cef11ed22fc0c9bfa7b00bf7f2d91012138f5613089522917fd26c853be93e"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.1.22"
-  google_sign_in_ios:
-    dependency: transitive
-    description:
-      name: google_sign_in_ios
-      sha256: a7d653803468d30b82ceb47ea00fe86d23c56e63eb2e5c2248bb68e9df203217
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.7.4"
-  google_sign_in_platform_interface:
-    dependency: transitive
-    description:
-      name: google_sign_in_platform_interface
-      sha256: "1f6e5787d7a120cc0359ddf315c92309069171306242e181c09472d1b00a2971"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.4.5"
-  google_sign_in_web:
-    dependency: transitive
-    description:
-      name: google_sign_in_web
-      sha256: fc0f14ed45ea616a6cfb4d1c7534c2221b7092cc4f29a709f0c3053cc3e821bd
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.12.4"
   helpers:
     dependency: "direct main"
     description:
@@ -759,14 +627,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
-  nm:
-    dependency: transitive
-    description:
-      name: nm
-      sha256: "2c9aae4127bdc8993206464fcc063611e0e36e72018696cd9631023a31b24254"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.5.0"
   octo_image:
     dependency: transitive
     description:
@@ -927,30 +787,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.27.7"
-  sign_in_with_apple:
-    dependency: transitive
-    description:
-      name: sign_in_with_apple
-      sha256: "3dcc472f6d3ef6915828b4aa536da14df20a6d1fee65c02eaa7e75b5c4f3f599"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.0"
-  sign_in_with_apple_platform_interface:
-    dependency: transitive
-    description:
-      name: sign_in_with_apple_platform_interface
-      sha256: a5883edee09ed6be19de19e7d9f618a617fe41a6fa03f76d082dfb787e9ea18d
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
-  sign_in_with_apple_web:
-    dependency: transitive
-    description:
-      name: sign_in_with_apple_web
-      sha256: ffe74793bc31e7e7cc7e149fe14711a59e50a9cbbb3198e1f67fda92492f7b54
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -1225,4 +1061,4 @@ packages:
     version: "6.5.0"
 sdks:
   dart: ">=3.3.0 <=3.9.0"
-  flutter: ">=3.19.1"
+  flutter: ">=3.19.0"

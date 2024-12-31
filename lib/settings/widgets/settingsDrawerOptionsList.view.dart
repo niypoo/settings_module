@@ -1,7 +1,4 @@
 import 'package:app_configuration_service/appInfo.config.dart';
-import 'package:authentication_view_module/views/widgets/changeToPermanentSettingCard.widget.dart';
-import 'package:authentication_view_module/views/widgets/deleteMyAccountSettingCard.widget.dart';
-import 'package:authentication_view_module/views/widgets/signoutSettingCard.widget.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fly_ui/views/drawer/widgets/drawerButton.widget.dart';
 import 'package:fly_ui/views/drawer/widgets/drawerSectionTitle.widget.dart';
@@ -16,9 +13,6 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
   const SettingsDrawerOptions({
     Key? key,
     this.enableContactUs = true,
-    this.enablePermanentAccount = true,
-    this.enableDeleteMyAccount = true,
-    this.enableSignOut = true,
     this.enableLocalization = true,
     this.enableTheme = true,
     this.children = const [],
@@ -27,9 +21,7 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
   final bool enableLocalization;
   final bool enableTheme;
   final bool enableContactUs;
-  final bool enablePermanentAccount;
-  final bool enableDeleteMyAccount;
-  final bool enableSignOut;
+
   final List<Widget> children;
 
   @override
@@ -73,16 +65,7 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
           title: 'Terms'.tr,
         ),
 
-        /////////////////
-        ///isAnonymous//
-        ///////////////
-        if (enablePermanentAccount) const ChangeToPermanentDrawerSettingCard(),
 
-        //DELETE
-        if (enableDeleteMyAccount) const DeleteMyAccountDrawerSettingCard(),
-
-        // Sign Out
-        if (enableSignOut) const SignOutDrawerSettingCard(),
       ],
     );
   }

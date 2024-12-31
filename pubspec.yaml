@@ -22,12 +22,6 @@ dependencies:
   launch_url_helper:
     git: 
       url: git@github.com:niypoo/launch_url_helper.git
-  firebase_authentication_service:
-    git: 
-      url: git@github.com:niypoo/firebase_authentication_service.git
-  authentication_view_module:
-    git: 
-      url: git@github.com:niypoo/authentication_view_module.git
   localization_service:
     git: 
       url: git@github.com:niypoo/localization_service.git

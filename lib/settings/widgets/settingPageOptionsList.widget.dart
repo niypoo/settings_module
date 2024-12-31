@@ -1,6 +1,3 @@
-import 'package:authentication_view_module/views/widgets/changeToPermanentSettingCard.widget.dart';
-import 'package:authentication_view_module/views/widgets/deleteMyAccountSettingCard.widget.dart';
-import 'package:authentication_view_module/views/widgets/signoutSettingCard.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:fly_ui/views/cards/settingIconCard.widget.dart';
 import 'package:fly_ui/views/widgets/titleHeadline.widget.dart';
@@ -37,23 +34,6 @@ class SettingPageOptionsList extends GetView<SettingsController> {
           onTap: controller.onContactUsMenuShow,
           title: 'Contact us'.tr,
         ),
-
-        // title
-        FlyHeadline(title: 'Account & Data'.tr),
-
-        /////////////////
-        ///isAnonymous//
-        ///////////////
-        const ChangeToPermanentSettingCard(),
-
-        //DELETE
-        const DeleteMyAccountSettingCard(),
-
-        // Sign Out
-        const SignOutSettingCard(),
-
-
-        
       ],
     );
   }
