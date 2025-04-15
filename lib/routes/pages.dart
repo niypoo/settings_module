@@ -14,7 +14,7 @@ class SettingsPages {
           name: SettingsRoutesNames.SETTINGS,
           page: () => SettingsView(customSettings: customSettings),
           binding: SettingsBinding(),
-          customTransition: FlyRouteTransition(),
+          customTransition: FlySharedAxisTransition(),
         ),
       ];
 }

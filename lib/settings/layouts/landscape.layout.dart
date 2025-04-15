@@ -19,7 +19,6 @@ class LandscapeLayout extends GetView<SettingsController> {
         children: [
           FlyAppBar(
             title: 'Settings'.tr,
-            padding: 0.0,
           ),
         ],
       ),

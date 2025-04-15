@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fly_ui/deprecated/titleHeadline.widget.dart';
 import 'package:fly_ui/views/cards/settingIconCard.widget.dart';
-import 'package:fly_ui/views/widgets/titleHeadline.widget.dart';
 import 'package:get/get.dart';
 import 'package:localization_service/views/localizationSettingCard.widget.dart';
 import 'package:settings_module/settings/settings.controller.dart';
