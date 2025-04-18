@@ -27,6 +27,8 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         FlyDrawerSectionTitle(title: 'Settings'.tr),
 
@@ -64,8 +66,6 @@ class SettingsDrawerOptions extends GetView<SettingsController> {
           onTap: () => LaunchUrlHelper.toUrl(AppConfigService.to.termsUrl),
           title: 'Terms'.tr,
         ),
-
-
       ],
     );
   }
